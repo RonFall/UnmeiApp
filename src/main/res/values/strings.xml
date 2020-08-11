@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">UnmeiApp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--    AUTHORISATION SCREEN    -->
+    <string name="log_screen_text">Войдите в свой аккаунт</string>
+    <string name="log_screen_login">Логин</string>
+    <string name="log_screen_pass">Пароль</string>
+    <string name="log_screen_login_btn">Войти</string>
+    <string name="log_screen_register_btn">Регистрация</string>
+    <string name="log_screen_forgot">Забыли пароль?</string>
+    <string name="log_screen_failure">Неверный логин и/или пароль!</string>
+
+    <!--    MAIN SCREEN    -->
+    <string name="main_center">Главная</string>
+    <string name="main_novel">Новеллы</string>
+    <string name="main_user">Аккаунт</string>
+    <string name="main_settings">Настройки</string>
+
+    <!--    ACCOUNT FRAGMENT    -->
+    <string name="acc_novels">Новеллы</string>
+    <string name="acc_novel_planned">Запланировано</string>
+    <string name="acc_novel_completed">Пройдено</string>
+    <string name="acc_novel_in_progress">Прохожу</string>
+    <string name="acc_novel_deferred">Отложено</string>
+    <string name="acc_novel_dropped">Брошено</string>
+
+    <!--    SETTINGS FRAGMENT    -->
+    <string name="unauthorized_user_msg">Войдите в свой аккаунт, чтобы настроить его!</string>
+</resources>

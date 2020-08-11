@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:id="@+id/frag_account">
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/logout" />
+
+    <LinearLayout
+        android:id="@+id/container_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/user_avatar"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/user_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="2dp"
+                android:background="@drawable/btn_log_reg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_novels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/container_user"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/block_novels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/acc_novels"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/planned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/stat_container_padding"
+            android:text="@string/acc_novel_planned"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@color/text_planned"
+            android:paddingLeft="@dimen/stat_container_padding"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/stat_container_padding"
+            android:text="@string/acc_novel_completed"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@color/text_completed"
+            android:paddingLeft="@dimen/stat_container_padding"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/inProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/stat_container_padding"
+            android:text="@string/acc_novel_in_progress"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@color/text_in_progress"
+            android:paddingLeft="@dimen/stat_container_padding"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/deferred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/stat_container_padding"
+            android:text="@string/acc_novel_deferred"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@color/text_deferred"
+            android:paddingLeft="@dimen/stat_container_padding"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/dropped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/stat_container_padding"
+            android:text="@string/acc_novel_dropped"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@color/text_dropped"
+            android:paddingLeft="@dimen/stat_container_padding"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_novels"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"/>
+</RelativeLayout>

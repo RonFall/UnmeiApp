@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <stroke android:color="#fff" android:width="1dp"/>
+            <solid android:color="@color/login_web_btn_true"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <stroke android:color="#fff" android:width="1dp"/>
+            <solid android:color="@color/login_web_btn_false"/>
+        </shape>
+    </item>
+
+</selector>

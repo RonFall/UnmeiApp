@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    MAIN    -->
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorText">#EFEFEF</color>
+    <color name="colorAccent">#ff0000</color>
+
+    <!--    LOGIN SCREEN    -->
+    <color name="login_web_btn_true">#393939</color>
+    <color name="login_web_btn_false">#212121</color>
+
+    <!--    CORE SCREEN    -->
+    <color name="core_nav">#0b0b0b</color>
+    <color name="core_text">#ffffff</color>
+
+    <!--    ACCOUNT FRAGMENT    -->
+    <color name="text_planned">#339999</color>
+    <color name="text_completed">#393</color>
+    <color name="text_in_progress">#939</color>
+    <color name="text_deferred">#333</color>
+    <color name="text_dropped">#933</color>
+
+</resources>
